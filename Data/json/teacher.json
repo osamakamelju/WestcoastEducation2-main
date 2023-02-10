@@ -1,0 +1,32 @@
+[
+    {
+        "teacherId": 55555,
+        "email": "albin@mail.com",
+        "firstName": "Albin",
+        "lastName": "Hagblad",
+        "socialSecurityNumber": "19700130",
+        "streetAddress": "Hammarbyvägen 1",
+        "postalCode": "123 45",
+        "phone": "076123456"
+    },
+    {
+        "teacherId": 66666,
+        "email": "anton@mail.com",
+        "firstName": "Anton",
+        "lastName": "Delgado",
+        "socialSecurityNumber": "19700530",
+        "streetAddress": "Grytagränd 1",
+        "postalCode": "123 56",
+        "phone": "076123457"
+    },
+    {
+        "teacherId": 77777,
+        "email": "kenneth@mail.com",
+        "firstName": "Kenneth",
+        "lastName": "Karlson",
+        "socialSecurityNumber": "19700730",
+        "streetAddress": "Holmvägen 1",
+        "postalCode": "123 67",
+        "phone": "076123458"
+    }
+]

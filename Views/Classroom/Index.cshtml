@@ -1,0 +1,19 @@
+@model IList<WestcoastEducation.Web.Models.Classroom>
+
+@{
+    ViewBag.PageTitle = "Our Education";
+}
+
+<article class="page">
+    <h1 class="page-title">Our Courses list:</h1>
+    <section class="course-container">
+        @foreach (var classroom in Model)
+        {
+            <div>
+                <a asp-action="details" asp-route-classroomId=@classroom.ClassroomId>@classroom.Name - @classroom.Content</a>
+            </div>
+        }
+    </section>
+    <h1 class="page-title"></h1>
+    <h1 class="page-title"></h1>
+</article>

@@ -1,0 +1,45 @@
+@model WestcoastEducation.Web.Models.Classroom
+
+@{
+    Layout = "_LayoutAdmin";
+    var startDate = Model.Start.ToString("yyyy-MM-dd");
+    var endDate = Model.End.ToString("yyyy-MM-dd");
+}
+
+<section class="page">
+    <h1 class="page-title">Edit course</h1>
+
+    <form class="shadow" asp-action="edit" asp-controller="ClassroomAdmin" asp-route-classroomId=@Model.ClassroomId
+        method="post">
+
+        <div class="form-control">
+            <label for="">Course title</label>
+            <input asp-for="Title" />
+        </div>
+        <div class="form-control">
+            <label for="">Course name</label>
+            <input asp-for="Name" />
+        </div>
+        <div class="form-control">
+            <label for="">Starting date</label>
+            <input asp-for="Start" type="date" value="@startDate" />
+        </div>
+        <div class="form-control">
+            <label for="">Ending date</label>
+            <input asp-for="End" type="date" value="@endDate" />
+        </div>
+
+        <div class="form-control">
+            <div class="buttons-container">
+                <button type="Submit" class="btn-submit">
+                    <i class="fa-sharp fa-solid fa-floppy-disk"></i> Save
+                </button>
+                <button class="btn-cancel">
+                    <a asp-action="Index" asp-controller="ClassroomAdmin">
+                        <i class="fa-solid fa-arrow-left"></i> Cancel</a>
+                </button>
+            </div>
+
+        </div>
+    </form>
+</section>

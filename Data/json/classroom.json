@@ -1,0 +1,50 @@
+[
+    {
+        "courseId": 123,
+        "name": "Introduction to programming",
+        "title": "P1",
+        "content": "Python",
+        "avgGrade": 50,
+        "start": "2022-09-01",
+        "end": "2022-11-30", 
+        "schedule": "",
+        "isOnDistance": false,
+        "teacherId": 1
+    },
+    {
+        "courseId": 1234,
+        "name": "Frontend developing",
+        "title": "FD",
+        "content": "Basics of HTML CSS & JS",
+        "avgGrade": 50,
+        "start": "2022-12-01",
+        "end": "2023-01-30", 
+        "schedule": "",
+        "isOnDistance": false,
+        "teacherId": 2
+    },
+    {
+        "courseId": 12345,
+        "name": "Backend developing",
+        "title": "BD",
+        "content": "Basics of php",
+        "avgGrade": 50,
+        "start": "2023-02-01",
+        "end": "2023-03-30", 
+        "schedule": "",
+        "isOnDistance": false,
+        "teacherId": 3
+    },
+    {
+        "courseId": 123456,
+        "name": "Mobile Apps",
+        "title": "MA",
+        "content": "Basics of Mobile application programming",
+        "avgGrade": 50,
+        "start": "2023-04-01",
+        "end": "2023-05-30", 
+        "schedule": "",
+        "isOnDistance": false,
+        "teacherId": 3
+    }
+]

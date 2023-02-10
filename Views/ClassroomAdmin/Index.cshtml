@@ -1,0 +1,69 @@
+@model IList<WestcoastEducation.Web.Models.Classroom>
+
+@{
+    ViewBag.PageTitle = "User Account";
+    Layout = "_LayoutAdmin";
+}
+
+<section class="page">
+    <h1>Education administration</h1>
+    <div class="table-container">
+        <div>
+            <button>
+            <a asp-action="create" asp-controller="ClassroomAdmin"> Add new course</a>
+            </button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Course ID</th>
+                    <th>Course title</th>
+                    <th>Course name</th>
+                    <th>Starting date</th>
+                    <th>Ending date</th>
+                    <th>Length of course</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var classroom in Model)
+                {
+                    <tr>
+                        <td class="edit-icon">
+                            <a asp-action="Edit" asp-controller="ClassroomAdmin"
+                            asp-route-classroomId=@classroom.ClassroomId>
+                                <i class="fa-regular fa-pen-to-square"></i></a>
+                        </td>
+
+                        <td>@classroom.ClassroomId</td>
+                        <td>@classroom.Title</td>
+                        <td>@classroom.Name</td>
+                        <td>@classroom.Start.ToString("MM/dd/yyyy")</td>
+                        <td>@classroom.End.ToString("MM/dd/yyyy")</td>
+                        <td>@classroom.Length.ToString("dd") days</td>
+
+                        <td class="delete-icon">
+                            <a asp-action="Delete" asp-controller="ClassroomAdmin"
+                            asp-route-classroomId=@classroom.ClassroomId>
+                                <i class="fa-solid fa-trash-can"></i></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tfoot>
+
+        </table>
+    </div>
+</section>

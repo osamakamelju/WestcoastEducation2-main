@@ -1,0 +1,42 @@
+[
+    {
+        "studentId": 11111,
+        "email": "1@email.com",
+        "firstName": "John",
+        "lastName": "Johnson",
+        "socialSecurityNumber": "19900211",
+        "streetAddress": "Spaljevägen 1A",
+        "postalCode": "123 45",
+        "phone": "076123456"
+    },
+    {
+        "studentId": 22222,
+        "email": "2@email.com",
+        "firstName": "Hadi",
+        "lastName": "Sandqvist",
+        "socialSecurityNumber": "19900212",
+        "streetAddress": "Karlslundsvägen",
+        "postalCode": "123 56",
+        "phone": "076123457"
+    },
+    {
+        "studentId": 33333,
+        "email": "3@email.com",
+        "firstName": "Hanna",
+        "lastName": "Anderson",
+        "socialSecurityNumber": "19900312",
+        "streetAddress": "Albyvägen 10",
+        "postalCode": "123 67",
+        "phone": "076123458"
+    },
+    {
+        "studentId": 44444,
+        "email": "4@email.com",
+        "firstName": "Karo",
+        "lastName": "Killbäck",
+        "socialSecurityNumber": "19900830",
+        "streetAddress": "Dragongatan 3",
+        "postalCode": "123 78",
+        "phone": "076123459"
+    }
+]
